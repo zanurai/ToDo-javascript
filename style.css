@@ -1,0 +1,141 @@
+:root {
+    --dark: rgb(58, 58, 114);
+    --darker: rgb(24, 24, 63);
+    --darkest: rgb(10, 10, 26);
+    --gray: gray;
+    --light: white;
+    --pink: rgb(207, 39, 193);
+    --purple: purple;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header {
+    padding: 30px;
+    margin: auto;
+    max-width: 800px;
+    width: 50%;
+
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    background: var(--dark);
+}
+
+header h1 {
+    color: gray;
+}
+
+#New-Task-2 {
+    display: flex;
+}
+
+input {
+    background: none;
+    border: none;
+    appearance: none;
+    outline: none;
+}
+
+#new-task {
+    flex: 1 1 0%;
+    height: 50px;
+    border-radius: 15px;
+    font-size: 20px;
+    background-color: var(--darker);
+    margin-top: 20px;
+    padding: 1rem;
+}
+
+#new-task-submit {
+    width: 100px;
+    height: 50px;
+    border-radius: 15px;
+    font-size: 20px;
+    border: none;
+    margin-top: 20px;
+    background: linear-gradient(to right, var(--pink), var(--light));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    cursor: pointer;
+}
+
+.task2 {
+
+    padding: 30px;
+    margin: auto;
+    max-width: 800px;
+}
+
+.task2 h2 {
+    color: var(--gray);
+}
+
+.task {
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--darkest);
+    height: 50px;
+    border-radius: 10px;
+}
+
+#tasks .task .content {
+    padding: 10px;
+
+}
+
+#tasks .task .content .text {
+    font-size: 1.325rem;
+    color: var(--gray);
+    transition: 1s;
+}
+
+#tasks .task .action {
+    padding: 10px;
+}
+
+#tasks .task .action .edit {
+    font-size: 1.325rem;
+    margin-right: 20px;
+    background-color: var(--darkest);
+    background: linear-gradient(to right, var(--purple), var(--dark));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    cursor: pointer;
+    font-weight: 1000;
+}
+
+.task .action button {
+    text-transform: uppercase;
+    transition: 00.4s;
+}
+
+#tasks .task .action .delete {
+    font-size: 1.325rem;
+    background-color: var(--darkest);
+    background: linear-gradient(to right, var(--purple), var(--dark));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    cursor: pointer;
+    font-weight: 1000;
+}
+
+button {
+    border: none;
+}
+
+/*.action {
+    display: flex;
+    justify-content: space-between;
+}*/
+
+.task {
+    margin-top: 30px;
+}
